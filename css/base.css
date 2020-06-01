@@ -1,0 +1,20 @@
+/* Constraint */
+html, body { height: 100%; margin: 0; padding: 0; background-image: linear-gradient(180deg, #2af598 0%, #13ea9b 100%); }
+
+header { position: absolute; left: 0; top: 0; right: 0; text-align: center; min-width: 300px; }
+header a { color: black; text-decoration: none; }
+header .title { font-size: 33px; margin: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-shadow: 2px 2px 2px grey; }
+header button { width: 30%; min-width: 90px; max-width: 250px; height: 70px; font-size: 20px; font-weight: bold; border-radius: 20px; border-width: 0; }
+
+.container { position: absolute; left: 0; right: 0; top: 165px; bottom: 50px; overflow: scroll; min-width: 300px; }
+
+footer { position: absolute; left: 0; right: 0; bottom: 0; height: 50px; width: 100%; min-width: 300px; }
+footer div:first-child { display: flex; height: 100%; justify-content: center; align-items: center; }
+
+
+/* functional */
+.mail { font-size: 18px; font-weight: bold; text-decoration: none; color: black; }
+
+
+/* design */
+.aqua { background-color: lightblue; background-image: linear-gradient(180deg, #42dcdc 0%, #009efd 100%); }

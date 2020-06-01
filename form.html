@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="웹표준(HTML5) 과제"/>
+    <meta name="author" content="윤중현 2019620135"/>
+    <title>웹표준(HTML5) 과제 윤중현 2019620135</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><div class="title">웹표준(HTML5) 과제 윤중현 2019620135</div></a>
+      <a href="profile.html"><button class="aqua">프로파일</button></a>
+      <a href="album.html"><button class="aqua">앨범</button></a>
+      <a href="form.html"><button class="aqua">피드백</button></a>
+    </header>
+
+    <div class="container">
+      <form oninput="score_result.value=parseInt(score.value) + '점'" onsubmit="alert('문의는 tokijh@naver.com 으로 부탁드립니다.')">
+        <fieldset class="privacy">
+          <legend>Privary</legend>
+          <div>
+            <label for="name">이름</label>
+            <input type="text" name="name" placeholder="홍길동" required/>
+          </div>
+  
+          <div>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="abc@abc.com" required/>
+          </div>
+
+          <div>
+            <label for="phone">전화번호</label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-1234-5678" required/>
+          </div>
+        </fieldset>
+
+        <fieldset class="environment">
+          <legend>Environment</legend>
+          <div>
+            <label for="os">사용하시는 OS 를 선택해주세요.</label>
+            <div>
+              <input type="radio" name="os" value="Windows"/>
+              <label for="Window">Windows</label>
+              <input type="radio" name="os" value="MacOS"/>
+              <label for="MacOS">MacOS</label>
+              <input type="radio" name="os" value="Ubuntu"/>
+              <label for="Ubuntu">Ubuntu</label>
+              <input type="radio" name="os" value="Debian"/>
+              <label for="Debian">Debian</label>
+              <input type="radio" name="os" value="iOS"/>
+              <label for="iOS">iOS</label>
+              <input type="radio" name="os" value="Android"/>
+              <label for="Android">Android</label>
+            </div>
+          </div>
+
+          <div>
+            <div for="language">지주 사용하는 언어를 선택해주세요. (ctl 로 여러개 선택 가능)</div>
+            <div>
+              <select name="language" multiple>
+                <optgroup label="compiler">
+                  <option>c</option>
+                  <option>c++</option>
+                  <option>c#</option>
+                  <option>java</option>
+                  <option>kotlin</option>
+                  <option>swift</option>
+                </optgroup>
+                <optgroup label="interpreter">
+                  <option>javascript</option>
+                  <option>php</option>
+                  <option>python</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="etc">
+          <legend>ETC</legend>
+          <div>
+            <label for="score">점수</label>
+            <input type="range" id="score" name="score" min="0" max="10" value="10"/>
+            <label><output name="score_result" for="score">10점</output></label>
+          </div>
+
+          <div>
+            <label for="question">내용</label>
+            <textarea name="question" placeholder="내용을 입력해주세요." required></textarea>
+          </div>
+        </fieldset>
+
+        <button type="reset">초기화</button>
+        <button>등록</button>
+      </form>
+    </div>
+
+    <footer>
+      <div>
+        <a class="mail" href="mailto:tokijh@naver.com">tokijh@naver.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
