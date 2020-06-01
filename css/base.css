@@ -19,3 +19,9 @@ footer div:first-child { display: flex; height: 100%; justify-content: center; a
 
 /* design */
 .aqua { background-color: lightblue; background-image: linear-gradient(180deg, #42dcdc 0%, #009efd 100%); }
+
+@media screen and (max-width: 640px) {
+  header .title { font-size: 20px; }
+  header button { height: 30px; }
+  .container { top: 105px; }
+}
