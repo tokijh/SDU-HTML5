@@ -83,13 +83,17 @@
           <legend>ETC</legend>
           <div>
             <label for="score">점수</label>
-            <input type="range" id="score" name="score" min="0" max="10" value="10"/>
-            <label><output name="score_result" for="score">10점</output></label>
+            <div>
+              <label><output name="score_result" for="score">10점</output></label>
+              <input type="range" id="score" name="score" min="0" max="10" value="10"/>
+            </div>
           </div>
 
           <div>
             <label for="question">내용</label>
-            <textarea name="question" placeholder="내용을 입력해주세요." required></textarea>
+            <div>
+              <textarea name="question" placeholder="내용을 입력해주세요." required></textarea>
+            </div>
           </div>
         </fieldset>
 
